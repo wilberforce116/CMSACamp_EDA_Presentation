@@ -227,7 +227,7 @@ quantile(cricket_cleaned$economy, na.rm = T)
 
 
 
-```{r out.width='55%', echo = FALSE, fig.align='center'}
+```{r out.width='55%', echo = FALSE, fig.align='center', message = F}
 stat.labs <-c("Mean average", "Mean Economy", "Mean Maiden Ratio", "Mean Strike Rate")
 names(stat.labs) <- c("avg_average", "avg_economy", "avg_maidenratio", "avg_strikerate")
 cricket_cleaned %>%
@@ -263,7 +263,7 @@ cricket_cleaned %>%
 
 --
 
-```{r out.width='52%', echo = FALSE, fig.align='center'}
+```{r out.width='52%', echo = FALSE, fig.align='center', message = F}
 cricket_by_country <- cricket_cleaned %>%
   na.omit() %>% 
   group_by(country) %>%
